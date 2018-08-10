@@ -1,0 +1,36 @@
+﻿<div id="chartModal" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document" style="width: 80%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Análise de Sinais por Periodo</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form id="updateChartForm">
+                        <div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="hidden" name="macAddress" />
+                                <label>Periodo de Análise:</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">De</span>
+                                    <input type="text" name="dataInicio" class="form-control datepicker" /> 
+                                    <span class="input-group-addon">Até</span>
+                                    <input type="text" name="dataFim" class="form-control datepicker" /> 
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row mt-md">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 modalBody">
+                        <h1 class="text-center"><i class="fa fa-spinner fa-spin"></i></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

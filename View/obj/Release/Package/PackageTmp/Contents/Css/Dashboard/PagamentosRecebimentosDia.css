@@ -1,0 +1,81 @@
+﻿.aPagarHoje,
+.aReceberHoje
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: rgb(208, 208, 208) 1px 1px 5px 1px;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.aPagarHoje .base,
+.aReceberHoje .base
+{
+    width: 100%;
+    height: 205px;
+    padding: 15px;
+    position: relative;
+}
+
+.aPagarHoje .base .title1,
+.aReceberHoje .base .title1
+{
+    text-transform: uppercase;
+}
+
+.aPagarHoje .base .title1 h3,
+.aReceberHoje .base .title1 h3 {
+    margin: 0px;
+    color: #555;
+    font-size: 20px;
+}
+
+.aPagarHoje .base .title1 a p,
+.aReceberHoje .base .title1 a p {
+    margin: 0px;
+    color: #c1c1c1;
+    font-size: 12px;
+}
+
+
+.aPagarHoje .base .valor1,
+.aReceberHoje .base .valor1 {
+    margin-top: 38px;
+}
+
+.aPagarHoje .base .valor1 h1
+.aReceberHoje .base .valor1 h1 {
+    margin: 0px;
+    color: #555;
+}
+
+.aPagarHoje .base .totalPagamentoMes,
+.aReceberHoje .base .totalRecebimentoMes {
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 30px);
+    padding-top: 8px;
+    border-top: 1px solid #f3f3f3;
+}
+
+.aPagarHoje .base .totalPagamentoMes .title2,
+.aReceberHoje .base .totalRecebimentoMes .title2 {
+    text-transform: uppercase;
+    float: left
+}
+
+
+.aPagarHoje .base .totalPagamentoMes .title2 h3,
+.aReceberHoje .base .totalRecebimentoMes .title2 h3 {
+    margin: 0px;
+    color: #c1c1c1;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.aPagarHoje .base .totalPagamentoMes .valor2 h2,
+.aReceberHoje .base .totalRecebimentoMes .valor2 h2 {
+    margin: 0px;
+    color: #c1c1c1;
+    float: right;
+    font-size: 22px;
+}

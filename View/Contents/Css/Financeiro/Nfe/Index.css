@@ -1,0 +1,183 @@
+﻿.btn-Manifesta:hover {
+    cursor: pointer;
+}
+
+.btn-title {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.btn-options {
+    padding: 15px;
+    background-color: #ecedf0;
+    color: #4c4c4c;
+    border: 1px solid #c3c3c3;
+    width: 100px;
+    height: 110px;
+}
+
+.btn-options:hover {
+    border-color: #4c4c4c;
+}
+
+.btn-options:focus, .btn-options:active {
+    background-color: #fdfdfd;
+    border-color: black;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    color: black;
+}
+
+.btn-manifestacao-option {
+    display: none;
+    position: relative;
+}
+
+.btn-manifestacao-option button {
+    border-radius: 100px;
+    line-height: 50px;
+    padding: 0px;
+    width: 50px;
+    box-shadow: 1px 1px 1px 1px gainsboro;
+    margin-bottom: 12px;
+}
+
+.btn-manifestacao-option button i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.btn-manifestacao-option p {
+    position: absolute;
+    top: 14px;
+    left: 55px;
+    background-color: #1d2127;
+    border: 1px solid #a5a5a5;
+    padding-top: 1px;
+    color: white;
+    padding-bottom: 1px;
+    padding-left: 6px;
+    border-radius: 6px;
+    padding-right: 6px;
+}
+
+.manifestacao-dropdown {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    width: 1000px;
+    left: -72px;
+    top: 109%;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    border-radius: 4px;
+}
+
+.blockMsg {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 20px;
+    top: 288px !important;
+}
+
+.nf-list {
+    height: 100%;
+    list-style-type: none;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+.nf-item-info-area {
+    padding: 10px 5px;
+}
+
+.nf-list .nf-item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 10px;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    max-width: 220px;
+    background-color: white;
+    box-shadow: 2px 2px 4px #c3c3c3;
+}
+
+.nf-list .nf-item .nf-item-info-area i.check-icon {
+    position: absolute;
+    top: 65px;
+    left: 55px;
+    font-size: 120px;
+    border-radius: 100%;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari 3-8 */
+    transform: rotate(90deg);
+    color: transparent;
+    -webkit-transition: color 0.25s, -ms-transform 0.25s, -webkit-transform 0.25s, transform 0.25s; /* Safari */
+    transition: color 0.25s, -ms-transform 0.25s, -webkit-transform 0.25s, transform 0.25s;
+}
+
+.nf-list .nf-item .nf-item-info-area i.check-icon.show {
+    display: block;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    color: rgba(55, 222, 55, 0.3);
+    -webkit-transition: color 0.25s, -ms-transform 0.25s, -webkit-transform 0.25s, transform 0.25s; /* Safari */
+    transition: color 0.25s, -ms-transform 0.25s, -webkit-transform 0.25s, transform 0.25s;
+}
+
+
+.nf-list .nf-item:hover {
+    cursor: pointer;
+    background-color: #fbfbfb;
+}
+
+.nf-item label {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.nf-item p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    /*white-space: nowrap;*/
+}
+
+.nf-item p.ClienteFornecedor {
+    line-height: 22px;
+    height: 44px;
+}
+
+.nf-item .nf-item-title-bar {
+    background-color: #efefef;
+    width: 100%;
+    height: 30px;
+    color: black;
+    position: relative;
+}
+
+.nf-item .nf-item-title-bar .cbx-selecter {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+}
+
+.nf-item .nf-item-title-bar p {
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px;
+    color: white;
+}
+

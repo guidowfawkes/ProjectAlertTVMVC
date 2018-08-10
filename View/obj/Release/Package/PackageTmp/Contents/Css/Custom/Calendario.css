@@ -1,0 +1,217 @@
+.toolBarCalendarioCol {
+    float: left;
+    margin-top:3px;
+}
+
+.toolBarCalendarioColBtnCalendar {
+    width: 100%;
+    padding-right: 0px;
+}
+
+.toolBarCalendarioColBtnToday {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.toolBarCalendarioColBtnPrev {
+    width: 50%;
+    padding-left: 0px;
+    padding-right: 3px;
+}
+
+.toolBarCalendarioColBtnNext {
+    width: 50%;
+    padding-left: 3px;
+    padding-right: 0px;
+}
+
+.toolBarCalendarioColHMonth {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.toolBarCalendarioColInputSearch {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.toolBarCalendarioColSelectVisualization {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .toolBarCalendarioColBtnCalendar {
+        width: 50%;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColBtnToday {
+        width: 50%;
+        padding-left: 3px;
+        padding-right: 0px;
+    }
+
+    .toolBarCalendarioColBtnPrev {
+        width: 10%;
+        padding-left: 0px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColBtnNext {
+        width: 10%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColHMonth {
+        width: 80%;
+        padding-left: 3px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .toolBarCalendarioColInputSearch {
+        width: 50%;
+        padding-left: 0px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColSelectVisualization {
+        width: 50%;
+        padding-left: 3px;
+        padding-right: 0px;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .toolBarCalendarioColBtnCalendar {
+        width: 20%;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColBtnToday {
+        width: 15%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColBtnPrev {
+        width: 6%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColBtnNext {
+        width: 6%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColHMonth {
+        width: 53%;
+        padding-left: 3px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .toolBarCalendarioColInputSearch {
+        width: 50%;
+        padding-left: 0px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColSelectVisualization {
+        width: 50%;
+        padding-left: 3px;
+        padding-right: 0px;
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .toolBarCalendarioColBtnCalendar {
+        width: 15%;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColBtnToday {
+        width: 10%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColBtnPrev {
+        width: 5%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColBtnNext {
+        width: 5%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColHMonth {
+        width: 35%;
+        padding-left: 3px;
+        padding-right: 3px;
+        text-align: center;
+    }
+
+    .toolBarCalendarioColInputSearch {
+        width: 20%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .toolBarCalendarioColSelectVisualization {
+        width: 10%;
+        padding-left: 3px;
+        padding-right: 0px;
+    }
+
+}
+
+.calendarioCheckboxCustom {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.calendarioCheckboxCustom input[type="checkbox"] {
+    display: none;
+}
+
+.calendarioCheckboxCustomLabel {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    cursor: pointer;
+}
+
+.calendarioCheckboxCustom i {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: #ffffff;
+    display: none;
+}
+

@@ -1,0 +1,125 @@
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\View.dll.config
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\View.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\View.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Antlr3.Runtime.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Domain.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\EntityFramework.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\EntityFramework.SqlServer.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Infra.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Newtonsoft.Json.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Owin.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Service.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.Helpers.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.Mvc.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.Optimization.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.Razor.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.WebPages.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.WebPages.Razor.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\WebGrease.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Domain.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Infra.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Service.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\EntityFramework.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\EntityFramework.SqlServer.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.Helpers.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.Mvc.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.Optimization.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.Razor.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.WebPages.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\System.Web.WebPages.Razor.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Newtonsoft.Json.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Antlr3.Runtime.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\obj\Debug\View.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\View\obj\Debug\View.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\View.dll.config
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\View.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\View.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Antlr3.Runtime.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Domain.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\EntityFramework.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\EntityFramework.SqlServer.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Infra.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.Core.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Cookies.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Facebook.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Google.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.OAuth.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Twitter.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Web.Infrastructure.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Newtonsoft.Json.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Owin.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Service.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.Helpers.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.Mvc.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.Optimization.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.Razor.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.WebPages.Deployment.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.WebPages.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.WebPages.Razor.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\WebGrease.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Domain.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Infra.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Infra.dll.config
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Service.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Service.dll.config
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\EntityFramework.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\EntityFramework.SqlServer.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.Helpers.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.Mvc.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.Optimization.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.Razor.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.WebPages.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.WebPages.Deployment.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\System.Web.WebPages.Razor.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Newtonsoft.Json.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Antlr3.Runtime.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.Core.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Facebook.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Cookies.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.OAuth.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Google.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.Twitter.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\obj\Debug\View.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\View\obj\Debug\View.pdb

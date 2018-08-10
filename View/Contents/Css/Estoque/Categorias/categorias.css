@@ -1,0 +1,108 @@
+﻿ @media (min-width: 400px) {
+  .datatable-tools {
+   text-align: center;
+  }
+
+  .datatables-header , .datatable-tools{
+   margin-bottom: 10px;
+  }
+
+  .form-inline .form-control {
+   display: inline-block;
+   width: 100%;
+   vertical-align: middle;
+  }
+ }
+
+ @media (min-width: 992px) {
+  .datatable-tools {
+   text-align: left;
+  }
+ }
+
+ .dataTables_filter, .dataTables_filter input,
+ .dataTables_filter .input-group-btn .btn {
+  width: 100% !important;
+ }
+
+
+ .action-buttons {
+  display: inline-flex;
+ }
+
+ .action-buttons a {
+  margin: 1px;
+ }
+
+ .btn-cel {
+  text-align: center;
+ }
+
+ .categoria-title {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  font-size: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+  line-height: 20px
+ }
+
+ .categoria-title a {
+  color: #0088cc;
+ }
+
+ .categoria-title a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #0088cc;
+ }
+
+ .categoria-title a:focus {
+  cursor: pointer;
+  text-decoration: none;
+  color: #0088cc;
+ }
+
+ .panel-categoria {
+  margin-bottom: 2px;
+  margin-top: 10px;
+ }
+
+ .panel-body-categoria {
+  padding: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: none;
+ }
+
+ .title-remove-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+ }
+
+ .title-edit-btn {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+ }
+
+ .title-remove-icon:hover,
+ .title-edit-icon:hover{
+  cursor: pointer;
+  color: #808080;
+ }
+
+ .num_itens_span {
+  border-radius: 100px;
+  font-size: 10px;
+  position: absolute;
+  right: 70px;
+  top: 5px;
+ }

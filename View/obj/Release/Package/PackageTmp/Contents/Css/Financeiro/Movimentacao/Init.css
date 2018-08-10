@@ -1,0 +1,137 @@
+﻿.btn-title {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.btn-options {
+    padding: 15px;
+    background-color: #ecedf0;
+    color: #4c4c4c;
+    border: 1px solid #c3c3c3;
+    width: 100px;
+}
+
+.btn-recebimento {
+    color: #47a447;
+    border-color: #47a447;
+}
+
+.btn-pagamento {
+    color: #d2322d;
+    border-color: #d2322d;
+}
+
+.btn-filtro {
+    color: #0088cc;
+    border-color: #0088cc;
+}
+
+.btn-options:hover {
+    border-color: #4c4c4c;
+}
+
+.btn-recebimento:hover,
+.btn-recebimento:active,
+.btn-recebimento:focus {
+    background-color: #47a447;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn-pagamento:hover,
+.btn-pagamento:active,
+.btn-pagamento:focus {
+    background-color: #d2322d;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn-filtro:hover,
+.btn-filtro:active,
+.btn-filtro:focus {
+    background-color: #0088cc;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn-options:focus, .btn-options:active {
+    background-color: #fdfdfd;
+    border-color: black;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    color: black;
+}
+
+.btn-lancamento-anexar-doc {
+    position: absolute;
+    bottom: -19px !important;
+    left: 45px !important;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+    .btn-lancamento-anexar-doc.active,
+    .btn-lancamento-anexar-doc.active:active,
+    .btn-lancamento-anexar-doc.active:focus,
+    .btn-lancamento-anexar-doc.active:visited,
+    .btn-lancamento-anexar-doc.active:hover {
+        background-color: #171717;
+        color: white;
+    }
+
+.addFileBtn {
+    position: absolute;
+    top: -47px;
+    left: 0px;
+    background-color: #eaeaea !important;
+    border: none !important;
+    color: black;
+    font-size: 14px;
+    width: 105%;
+}
+
+.anexosListArea {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 250px;
+    height: 626px;
+    padding-right: 7px;
+    padding-top: 47px;
+    padding-bottom: 15px;
+    transition: left 0.5s;
+    -moz-transition: left 0.5s; /* Firefox 4 */
+    -webkit-transition: left 0.5s; /* Safari and Chrome */
+    -o-transition: left 0.5s; /* Opera */
+}
+
+.vinculacaoBar {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    width: 250px;
+    height: 626px;
+    padding-left: 15px;
+    padding-right: 7px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    transition: right 0.5s;
+    -moz-transition: right 0.5s; /* Firefox 4 */
+    -webkit-transition: right 0.5s; /* Safari and Chrome */
+    -o-transition: right 0.5s; /* Opera */
+}
+
+.recebidoField {
+    opacity: 0.2;
+}
+
+.repetirField {
+    opacity: 0.2;
+}
+
+.iconAnexo:hover {
+    color: #3f3fa9;
+    cursor: pointer;
+           
+}

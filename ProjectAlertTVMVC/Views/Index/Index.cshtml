@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-lg-12 col-ms-12 col-sm-12 col-xs-12">
+        @if (ViewBag.ClientesPaginator != null && ViewBag.ClientesPaginator.Conteudo.Count > 0)
+        {
+            <div class="col-lg-12 col-ms-12 col-sm-12 col-xs-12">
+                @{
+                    var paginator = ViewBag.ClientesPaginator;
+                    foreach (Cliente cliente in paginator.Conteudo)
+                    {
+                        <div id="@cliente.ClienteId" data-mac="@cliente.MacAdress" class="clientes" style="padding: 10px; margin-right: 10px; float: left; border: solid 1px">
+                            <span class="mac-panel" style="border: dotted 1px">@cliente.MacAdress</span><br />
+                            <span class="sinal1">@cliente.Sinal1<br /></span>
+                            <span class="sinal2">@cliente.Sinal2<br /></span>
+                        </div>
+                    }
+                }
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                @PaginatorHelper.Paginator(paginator.CountItens, paginator.CountPages, paginator.PaginaAtual, paginator.PaginaAnterior, paginator.ProximaPagina, paginator.FirstItemOfPage, paginator.LastItemOfPage, Url.Action("Index", "Home"))
+            </div>
+        }
+        else
+        {
+            <h3>Por Favor, cadastre um cliente!</h3>
+        }
+    </div> 
+</div>
+
+
+
+<div style="clear: both"></div>
+<script src="~/Scripts/VerificadorSinal.js"></script>

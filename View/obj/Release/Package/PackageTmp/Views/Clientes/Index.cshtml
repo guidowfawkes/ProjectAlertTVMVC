@@ -1,0 +1,114 @@
+﻿@using Domain.Models
+@{
+    ViewBag.Title = "Clientes";
+}
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="panel panel-featured-primary">
+                <header class="panel-heading">
+                    <div class="panel-actions">
+                        <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+                    </div>
+                    <h3>Lista de Clientes</h3>
+                </header>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="@Url.Action("OpenSave","Clientes")" class="btn btn-success"><i class="fa fa-plus"></i> Adicionar</a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <form id="searchForm" action="@Url.Action("Index", "Clientes")">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="searchTerm" value="@ViewBag.SearchTerm" placeholder="Digite um termo de pesquisa" />
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row mt-md">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            @if (ViewBag.ClientesPaginator != null && ViewBag.ClientesPaginator.Conteudo.Count > 0)
+                            {
+                                var paginator = ViewBag.ClientesPaginator;
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <td>Mac Addres</td>
+                                                <td>Cliente</td>
+                                                <td>CEP</td>
+                                                <td>Endereço</td>
+                                                <td>Cidade</td>
+                                                <td>Estado</td>
+                                                <td class="text-center">Ações</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (Cliente cliente in paginator.Conteudo)
+                                            {
+                                                <tr>
+                                                    <td>@cliente.MacAdress</td>
+                                                    <td>@cliente.Nome</td>
+                                                    <td>@cliente.Cep</td>
+                                                    <td>@cliente.Endereco</td>
+                                                    <td>@cliente.Cidade</td>
+                                                    <td>@cliente.Estado</td>
+                                                    <td class="text-center">
+                                                        <div style="display:inline">
+                                                            <a href="@Url.Action("OpenSave", "Clientes", new { id = cliente.Id })" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></a>
+                                                            <button class="btn btn-xs btn-danger btn-remove" data-id="@cliente.Id"><i class="fa fa-trash-o"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px">
+                                    @PaginatorHelper.Paginator(paginator.CountItens, paginator.CountPages, paginator.PaginaAtual, paginator.PaginaAnterior, paginator.ProximaPagina, paginator.FirstItemOfPage, paginator.LastItemOfPage, Url.Action("Index", "Clientes"))
+                                </div>
+                            }
+                            else
+                            {
+                                <h3>Nenhum Cliente Cadastrado</h3>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Remover
+            $(".btn-remove").on("click", function (e) {
+                var id = $(this).attr("data-id");
+                var url = "/Clientes/Delete";
+                var data = {
+                    id: id
+                };
+                AlertModal.Open("<h5>Tem certeza que deseja remover esse cliente?</h5>", function () {
+                    $.post(url, data, function (res) {
+                        res = JSON.parse(res);
+                        if (res.status == "success") {
+                            location.reload();
+                        } else {
+                            Blocker.UnblockPage();
+                            AlertModal.Close();
+                        }
+                    });
+                    Blocker.BlockPage();
+                }, function () {
+                    AlertModal.Close();
+                });
+            });
+        });
+    </script>
+}

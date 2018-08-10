@@ -1,0 +1,115 @@
+﻿@using Domain.Models
+@using Domain.Enums
+@{
+    ViewBag.Title = "Cadastro de Clientes";
+}
+
+<form id="clienteForm" action="@Url.Action("Save","Clientes")">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="panel panel-featured-primary">
+                <header class="panel-heading">
+                    <div class="panel-actions">
+                        <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+                    </div>
+                    <h3>Informações de Cliente</h3>
+                </header>
+                <div class="panel-body">
+
+                    <input type="hidden" name="Cliente.Id" value="@ViewBag.Cliente.Id" />
+                    @if (ViewBag.Cliente.Id > 0)
+                    {
+                        <input type="hidden" name="Cliente.RowVersion" value="@(Convert.ToBase64String(ViewBag.Cliente.RowVersion))" />
+                    }
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Endereço MAC</label>
+                                <input type="text" class="form-control" name="Cliente.MacAdress" value="@ViewBag.Cliente.MacAdress" data-type="macAdress" @(ViewBag.Cliente.Id > 0 ? "readonly" : "") required />
+                            </div>
+                        </div>  
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Nome do Cliente</label>
+                                <input type="text" class="form-control" name="Cliente.Nome" value="@ViewBag.Cliente.Nome" required />
+                            </div>
+                        </div>  
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Cep</label>
+                                <input type="text" class="form-control" name="Cliente.Cep" value="@ViewBag.Cliente.Cep" data-type="cep" required />
+                            </div>
+                        </div>  
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Endereço</label>
+                                <input type="text" class="form-control" name="Cliente.Endereco" value="@ViewBag.Cliente.Endereco" required />
+                            </div>
+                        </div>  
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Cidade</label>
+                                <input type="text" class="form-control" name="Cliente.Cidade" value="@ViewBag.Cliente.Cidade" required />
+                            </div>
+                        </div>  
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Estado</label>
+                                <select name="Cliente.Estado" class="form-control" required>
+                                    <option value=""></option>
+                                    @{
+                                        Dictionary<string, int> Estados = EnumDefault<EstadosUF>.GetValues();
+                                        foreach (KeyValuePair<string, int> option in Estados)
+                                        {
+                                            <option value="@option.Value" @(option.Value == ViewBag.Cliente.Estado.GetHashCode() ? "selected='selected'" : "")>@option.Key.Replace("_", "")</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <a href="@Url.Action("Index","Clientes")" class="btn btn-default btn-block"><i class="fa fa-arrow-left"></i> Voltar</a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <button type="submit" class="btn btn-success btn-block"><i class="fa fa-save"></i> Salvar</button>
+        </div>
+    </div>
+
+</form>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var form = $("#clienteForm");
+
+            Mascara.addMascaras(form);
+
+            if (form.length > 0) {
+                form.validate({
+                    submitHandler: function (form, e) {
+                        e.preventDefault();
+                        var data = $(form).serialize();
+                        var url = $(form).attr("action");
+                        $.post(url, data, function (res) {
+                            res = JSON.parse(res);
+                            if (res.status == "success") {
+                                location.href = "/Clientes/Index";
+                            } else {
+                                Blocker.UnblockPage();
+                            }
+                        });
+                        Blocker.BlockPage();
+                    }
+                })
+            }
+        });
+    </script>
+}

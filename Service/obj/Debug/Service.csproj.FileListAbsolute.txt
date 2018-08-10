@@ -1,0 +1,30 @@
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\Service.dll.config
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\Service.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\Service.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\Domain.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\EntityFramework.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\Infra.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\Domain.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\Infra.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\EntityFramework.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\obj\Debug\Service.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Service\obj\Debug\Service.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\Service.dll.config
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\Service.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\Service.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\Domain.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\EntityFramework.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\Infra.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\Domain.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\Infra.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\Infra.dll.config
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\EntityFramework.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\obj\Debug\Service.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Service\obj\Debug\Service.pdb

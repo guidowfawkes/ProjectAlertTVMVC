@@ -1,0 +1,101 @@
+﻿@helper Paginator(int CountItens, int CountPages, int PaginaAtual, int PaginaAnterior, int ProximaPagina, int FirstItemOfPage, int LastItemOfPage, string Route)
+{
+    <!-- PAGINATOR CONTROL: START-->
+    <div class="row datatables-footer">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-xs">
+            <div class="dataTables_info" id="datatable-tabletools_info" role="status" aria-live="polite">
+                Exibindo do &nbsp;<b>@FirstItemOfPage ao @LastItemOfPage</b>&nbsp; de @CountItens Itens Encontrados
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right">
+            <div class="dataTables_paginate paging_bs_normal" id="datatable-tabletools_paginate">
+                <ul class="pagination m-none">
+                    @if (PaginaAnterior > 0)
+                    {
+                        if (Route.Contains("?"))
+                        {
+                            <li class="prev">
+                                <a href="@Route&page=@PaginaAnterior">
+                                    <span class="fa fa-chevron-left"></span>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="prev">
+                                <a href="@Route?page=@PaginaAnterior">
+                                    <span class="fa fa-chevron-left"></span>
+                                </a>
+                            </li>
+                        }
+
+                      
+
+                    }
+                    else
+                    {
+                        <li class="prev disabled">
+                            <span class="fa fa-chevron-left"></span>
+                        </li>
+                    }
+
+                    @for (var item = 1; CountPages >= item; item++)
+                    {
+                        if (PaginaAtual == item)
+                        {
+                            <li class='pagitation-item active'>
+                                <a href="#">@item</a>
+                            </li>
+                        }
+                        else
+                        {
+                            if (Route.Contains("?"))
+                            {
+                                <li class='pagitation-item'>
+                                    <a href="@Route&page=@item">@item</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class='pagitation-item'>
+                                    <a href="@Route?page=@item">@item</a>
+                                </li>
+                            }
+
+                        }
+
+
+                    }
+
+                    @if (ProximaPagina > 0)
+                    {
+                        if (Route.Contains("?"))
+                        {
+                            <li class="next">
+                                <a href="@Route&page=@ProximaPagina">
+                                    <span class="fa fa-chevron-right"></span>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="next">
+                                <a href="@Route?page=@ProximaPagina">
+                                    <span class="fa fa-chevron-right"></span>
+                                </a>
+                            </li>
+                        }
+
+                    }
+                    else
+                    {
+                        <li class="next disabled">
+                            <span class="fa fa-chevron-right"></span>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- PAGINATOR CONTROL: STOP-->
+}

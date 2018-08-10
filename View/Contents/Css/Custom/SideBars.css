@@ -1,0 +1,63 @@
+.SideBarRight {
+    z-index: 1002;
+    background-color: white;
+    width: 290px;
+    right: -300px;
+    top: 60px;
+    height: 100%;
+    position: fixed;
+}
+
+
+.DefaultSideBar-Title {
+    background-color: #171717;
+    height: 50px;
+    border-left: 1px solid #3A3A3A;
+    text-align: center;
+}
+
+.DefaultSideBar-Title h4 {
+    color: white;
+    margin: 0;    
+    font-size: 2rem;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.DefaultSideBar-Body {
+    box-shadow: -1px 0 0 #d8d8d8;
+    background-color: #fbfbfb;
+    height: 100%;
+    width: 100%;
+    border-top: 4px solid #cccccc;
+}
+
+.SideBarBtn-chatIcon {
+    color: #224d8f !important;
+}
+
+.CalendarRigthBar {
+    margin-top: 5px;
+}
+
+.CalendarRigthBar-Toolbar {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.CalendarRigthBar-SubTitle {
+    padding: 0px;
+}
+
+/*Calendário Rigth Bar*/
+.CalendarRigthBar-SubTitle h4 {
+    padding: 10px;
+    background-color: #efefef;
+    color: black;
+    font-size: 12px;
+}
+
+.CalendarRighBar_calendarios-list {
+    list-style-type: none;
+    padding: 0px;
+}

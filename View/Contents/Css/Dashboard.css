@@ -1,0 +1,47 @@
+﻿.clientes {
+    width:100%;
+    padding: 10px; 
+    border: solid 1px #dfdfdf;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px #f3f3f3;
+    position: relative;
+}
+
+.clientes:hover {
+    cursor: pointer;
+    background-color: #f8f8f8;
+}
+
+.clientes .clienteNome {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #ebebeb;
+    margin: 0px;
+    height: 27px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: black;
+    line-height: 27px;
+}
+
+.clientes .mac-panel {
+    border: solid 1px #f3f3f3;
+    padding: 7px;
+    border-radius: 4px;
+    margin-top: 25px;
+}
+
+.clientes .tituloSinal {
+    margin: 0px;
+    font-weight: bold;
+}
+
+.clientes .sinal1 {
+
+}
+
+.clientes .sinal2 {
+
+}

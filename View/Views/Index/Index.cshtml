@@ -1,0 +1,297 @@
+﻿@using Domain.Models;
+
+@section Styles {
+    <link type="text/css" rel="stylesheet" href="~/Contents/Css/Dashboard.css" />
+}
+<div class="row">
+    <div class="col-lg-12 col-ms-12 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="panel panel-featured-primary">
+                    <header class="panel-heading">
+                        <div class="panel-actions">
+                            <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+                        </div>
+                        <h3>Dashboard</h3>
+                    </header>
+                    <div class="panel-body">
+                        <div class="row">
+                            @if (ViewBag.ClientesPaginator != null && ViewBag.ClientesPaginator.Conteudo.Count > 0)
+                            {
+                                var paginator = ViewBag.ClientesPaginator;
+                                foreach (Cliente cliente in paginator.Conteudo)
+                                {
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-md">
+                                        <div id="@cliente.Id" data-mac="@cliente.MacAdress" class="clientes">
+                                            <h5 class="text-center clienteNome">@cliente.Nome</h5>
+                                            <h4 class="mac-panel text-center">@cliente.MacAdress</h4>
+                                            <div class="row">
+                                                <div class="col-lg-6 dol-md-6 col-sm-12 col-xs-12">
+                                                    <h4 class="text-center tituloSinal">Sinal 1</h4>
+                                                    <h5 class="text-center sinal1">@cliente.Sinal1</h5>
+                                                </div>
+                                                <div class="col-lg-6 dol-md-6 col-sm-12 col-xs-12">
+                                                    <h4 class="text-center tituloSinal">Sinal 2</h4>
+                                                    <h5 class="text-center sinal2">@cliente.Sinal2</h5>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-md">
+                                    @PaginatorHelper.Paginator(paginator.CountItens, paginator.CountPages, paginator.PaginaAtual, paginator.PaginaAnterior, paginator.ProximaPagina, paginator.FirstItemOfPage, paginator.LastItemOfPage, Url.Action("Index", "Index"))
+                                </div>
+                            }
+                            else
+                            {
+                                <h3>Por Favor, cadastre um cliente!</h3>
+                            }
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("ChartModal")
+
+@section Scripts {
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script>
+
+    function verificarSinal() {
+        var macs = [];
+        $(".clientes").each(function (index) {
+            var cliente = $(this);
+
+            var mac = {
+                Id: parseInt(cliente.attr("id")),
+                Mac: cliente.attr("data-mac")
+            };
+            macs.push(mac);
+        });
+        verificarSinalRemoto(macs);
+    };
+
+    function verificarSinalRemoto(macs) {
+        var url = "/Index/GetSinal";
+        var data = { Macs: macs };
+        $.post(url, data, function (res) {
+            var res = JSON.parse(res);
+            if (res.status == "success") {
+                for(var i in res.data) {
+                    var cliente = res.data[i];
+                    var divCliente = $(".clientes[id=" + cliente.Id + "]").first();
+                    if (!cliente.Erro) {
+                        var retorno = JSON.parse(cliente.Retorno);
+                        var sinal1 = ((retorno.sinal1) * 100).toFixed(2);
+                        var sinal2 = ((retorno.sinal2) * 100).toFixed(2);
+                        var sinalBom = retorno.sinal1 + retorno.sinal2 > 0;
+
+                        divCliente.find(".sinal1")
+                            .css({ "display": "block" })
+                            .text(sinal1 + "%");
+
+                        divCliente.find(".sinal2")
+                            .css({ "display": "block" })
+                            .text(sinal2 + "%");
+
+                        if (sinalBom) {
+                            divCliente.find(".mac-panel")
+                               .css({ 'background-color': 'green', 'color': 'white' });
+                        }
+                        else {
+                            divCliente.find(".mac-panel")
+                                .css({ 'background-color': 'red', 'color': 'white' });
+                        }
+                    } else {
+                        divCliente.find(".sinal1")
+                            .css({ "display": "block" })
+                            .text("NAO ENCONTRADO");
+
+                        divCliente.find(".sinal2")
+                            .css({ "display": "block" })
+                            .text("NAO ENCONTRADO");
+                        
+                        divCliente
+                            .find(".mac-panel")
+                            .css({ 'background-color': '#ff8d00', 'color': 'white' });
+                    }
+                }
+            
+            }
+        })
+        .fail(function(err){
+            console.log(err.statusText);
+        });
+    };
+
+
+    $(document).ready(function () {
+        
+
+        var myChart = undefined;
+
+        $("#chartModal").on("hidden.bs.modal", function () {
+            $("#updateChartForm").find("input").each(function () {
+                $(this).val("");
+            });
+        });
+
+        $("#updateChartForm").find(".datepicker").each(function () {
+            $(this).datepicker({
+                format: "dd/mm/yyyy",
+                language: 'pt-BR'
+            });
+        });
+
+        $("#updateChartForm").validate({
+            submitHandler: function (form, e) {
+                e.preventDefault();
+                var mac = $(form).find("input[name='macAddress']").val();
+                var dataInicio = $(form).find("input[name='dataInicio']").val();
+                var dataFim = $(form).find("input[name='dataFim']").val();
+                var url = "/Index/GetLast60Days?mac=" + mac
+                    + "&dataInicio=" + dataInicio
+                    + "&dataFim=" + dataFim;
+                $.get(url, function (res) {
+                    res = JSON.parse(res);
+                    if (res.status == "success") {
+                        var retorno = JSON.parse(res.data);
+                        var labelsArray = [];
+                        var sinal1Array = [];
+                        var sinal2Array = [];
+
+                        for (var i in retorno) {
+                            var item = retorno[i];
+                            labelsArray.push(Utils.convertJustDateFromSQLServerDate(item.data))
+                        }
+
+                        for (var i in retorno) {
+                            var item = retorno[i];
+                            sinal1Array.push(parseFloat((item.sinal1 * 100).toFixed(2)));
+                        }
+
+                        for (var i in retorno) {
+                            var item = retorno[i];
+                            sinal2Array.push(parseFloat((item.sinal2 * 100).toFixed(2)));
+                        }
+
+                        var modalBody = $("#chartModal").find(".modalBody").first();
+
+                        myChart.data.labels = labelsArray;
+                        myChart.data.datasets = [
+                            {
+                                label: 'Sinal 1',
+                                data: sinal1Array,
+                                backgroundColor: 'rgba(0, 0, 0, 0)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                borderWidth: 3
+                            },
+                            {
+                                label: 'Sinal 2',
+                                data: sinal2Array,
+                                backgroundColor: 'rgba(0, 0, 0, 0)',
+                                borderColor: '#57efff',
+                                borderWidth: 3
+                            }
+                        ];
+                        myChart.update();
+                    } else {
+                        var modalBody = $("#chartModal").find(".modalBody").first();
+                        modalBody.empty();
+                        $("<h4>")
+                            .addClass("text-center")
+                            .text("Nao encontrado!")
+                            .appendTo(modalBody);
+                    }
+                })
+            }
+        })
+
+        $(".clientes").on("click", function () {
+            var macAddress = $(this).attr("data-mac");
+            var url = "/Index/GetLast60Days?mac=" + macAddress;
+            $.get(url, function (res) {
+                res = JSON.parse(res);
+                if (res.status == "success") {
+                    var retorno = JSON.parse(res.data);
+                    var labelsArray = [];
+                    var sinal1Array = [];
+                    var sinal2Array = [];
+
+                    for (var i in retorno) {
+                        var item = retorno[i];
+                        labelsArray.push(Utils.convertJustDateFromSQLServerDate(item.data))
+                    }
+
+                    for (var i in retorno) {
+                        var item = retorno[i];
+                        sinal1Array.push(parseFloat((item.sinal1 * 100).toFixed(2)));
+                    }
+
+                    for (var i in retorno) {
+                        var item = retorno[i];
+                        sinal2Array.push(parseFloat((item.sinal2 * 100).toFixed(2)));
+                    }
+
+                    var modalBody = $("#chartModal").find(".modalBody").first();
+                    modalBody.empty();
+
+                    var chart = $("<canvas>")
+                        .attr({
+                            "id": "myChart",
+                            
+                        }).appendTo(modalBody);
+
+                    var ctx = document.getElementById("myChart").getContext('2d');
+                    myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: labelsArray,
+                            datasets: [
+                                {
+                                    label: 'Sinal 1',
+                                    data: sinal1Array,
+                                    backgroundColor: 'rgba(0, 0, 0, 0)',
+                                    borderColor: 'rgb(255, 99, 132)',
+                                    borderWidth: 3
+                                },
+                                 {
+                                     label: 'Sinal 2',
+                                     data: sinal2Array,
+                                     backgroundColor: 'rgba(0, 0, 0, 0)',
+                                     borderColor: '#57efff',
+                                     borderWidth: 3
+                                 }
+                            ]
+                        },
+                        options: {}
+                    });
+                }
+                else {
+                    var modalBody = $("#chartModal").find(".modalBody").first();
+                    modalBody.empty();
+                    $("<h4>")
+                        .addClass("text-center")
+                        .text("Nao encontrado!")
+                        .appendTo(modalBody);
+                }
+            });
+            $("#chartModal").find("input[name='macAddress']").val(macAddress);
+            $("#chartModal").modal("show");
+        });
+
+        verificarSinal();
+        setInterval(function () {
+            verificarSinal();
+        }, 10000);
+
+    });
+
+
+</script>
+}
+

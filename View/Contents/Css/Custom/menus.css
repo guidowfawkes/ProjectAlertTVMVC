@@ -1,0 +1,97 @@
+/*CLOCK*/
+#main-clock {
+    font-size: 16px;
+    color: #224d8f;
+    font-weight: 600;
+}
+
+/*EVENTS MENU*/
+.eventsMenu-dateIcon {
+    background-image: url(/Contents/Images/icones/calendarioIcone.jpg) !important;
+    background-position: center center !important;
+    background-size: 70% !important;
+    background-repeat: no-repeat !important;
+    color: #224d8f;
+}
+
+.eventsMenu-clockCol {
+    border: 2px solid rgba(40, 64, 80,1);
+    border-radius: 45px;
+    padding: 13px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: rgba(40, 64, 80,1);
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+
+.eventsMenu-date {
+    font-size: 11px;
+    margin-bottom: -4px;
+    padding: 0px;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+}
+
+.eventsMenu-time {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    bottom: 7px;
+    left: 8px;
+}
+
+.eventsMenu-descriptionCol {
+    float: left;
+    width: calc(100% - 55px);
+    padding: 0px 5px 0px 5px;
+}
+
+.eventsMenu-descriptionCol h4 a {
+    color: black;
+}
+
+.eventsMenu-descriptionCol h4 a:hover {
+    color: #848484;
+}
+
+.eventsMenu-description-title {
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(40, 64, 80);
+    margin-bottom: 0px;
+}
+
+.eventsMenu-description-description {
+    text-align: justify;
+    font-size: 12px;
+    overflow: hidden;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 50px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word,
+}
+
+.eventsMenu-totalEventsNotification {
+    line-height: 15px;
+    border-radius: 18px;
+    position: absolute;
+    padding: 3px;
+    top: -5px;
+    min-width: 20px;
+    right: -8px;
+    font-size: 10px;
+    background-color: red !important;
+    color: white !important;
+}
+    
+

@@ -1,0 +1,10 @@
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Domain\bin\Debug\Domain.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Domain\bin\Debug\Domain.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Domain\obj\Debug\Domain.dll
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Domain\obj\Debug\Domain.pdb
+C:\Users\Guido\documents\visual studio 2013\Projects\ProjectAlertTVMVC\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\bin\Debug\Domain.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\bin\Debug\Domain.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\obj\Debug\Domain.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\obj\Debug\Domain.pdb

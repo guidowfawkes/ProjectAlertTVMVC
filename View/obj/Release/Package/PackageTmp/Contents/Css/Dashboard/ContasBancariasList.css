@@ -1,0 +1,98 @@
+﻿.contaBancariaList {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.contaBancariaList .item {
+    height: 160px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.contaBancariaList .item .bancoLogo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 41px;
+    height: 41px;
+}
+
+.contaBancariaList .item .bancoLogo.bancoDoBrasil {
+    background-image: url('/Contents/Images/Logos_Bancos.png');
+    background-position: -18px -11px;
+}
+
+.contaBancariaList .item .bancoLogo.bancoBradesco {
+    background-image: url('/Contents/Images/Logos_Bancos.png');
+    background-position: -92px -11px;
+}
+
+.contaBancariaList .item .bancoLogo.bancoItau {
+    background-image: url('/Contents/Images/Logos_Bancos.png');
+    background-position: -166px -11px;
+}
+
+.contaBancariaList .item .bancoLogo.bancoMercantil {
+    background-image: url('/Contents/Images/Logos_Bancos.png');
+    background-position: -238px -11px;
+}
+
+.contaBancariaList .item .bancoLogo.bancoSantander {
+    background-image: url('/Contents/Images/Logos_Bancos.png');
+    background-position: -18px -80px;
+}
+
+.contaBancariaList .item .bancoLogo.bancoCaixa {
+    background-image: url('/Contents/Images/Logos_Bancos.png');
+    background-position: -166px -80px;
+}
+
+.contaBancariaList .item .bancoLogo.bancoSicred {
+    background-image: url('/Contents/Images/Logos_Bancos.png');
+    background-position: -166px -80px;
+}
+
+.contaBancariaList .item .title {
+    text-transform: uppercase;
+    padding-right: 70px;
+    height: 55px;
+}
+
+.contaBancariaList .item .title h3 {
+    margin: 0px;
+    color: #555
+}
+
+.contaBancariaList .item .title p {
+    margin: 0px;
+    color: #c1c1c1
+}
+
+.contaBancariaList .item .valorConta h1 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.contaBancariaList .item .Status {
+    text-align: right;
+    opacity: 0.3;
+}
+
+.contaBancariaList .item .Status:hover {
+    text-align: right;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.contaBancariaList .item .Status.success {
+    color: green;
+}
+
+.contaBancariaList .item .Status p span {
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+
+

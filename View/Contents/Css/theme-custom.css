@@ -1,0 +1,217 @@
+/* Add here all your CSS customizations */
+
+.form-control:focus {
+   border-color: rgba(37, 42, 52, 0.8);
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(37, 42, 52, 0.6);
+   outline: 0 none;
+}
+
+.tag-bloqueado {
+    border: 1px solid #d2322d;
+    border-radius: 15px;
+    padding: 4px;
+    color: #d2322d;
+}
+
+.select2{
+    width:100% !important;   
+}
+
+.select2-container--disabled .selection .select2-selection .select2-selection__rendered {
+    background: #eeeeee;
+}
+
+.flags-multiplas {
+    padding: 5px;
+    background-color: rgb(236, 237, 240);
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.select2-selection__rendered.form-control:focus {
+    border-color: rgba(37, 42, 52, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(37, 42, 52, 0.6);
+    outline: 0 none;
+}
+
+.modal-info {
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.modal-info:hover {
+    opacity: .4;
+}
+
+.modal {
+    overflow: scroll !important;
+    overflow-x: hidden !important;
+}
+
+    .modal::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+
+.info-message {
+    display: none;
+}
+
+.select2-container .select2-selection--single {
+    height: 34px;
+}
+
+.select2-container .select2-selection--multiple {
+    height: 34px;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.select2-container--default .select2-container--focus .select2-selection--multiple {
+    height: 34px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+
+#menu ul li a i {
+    font-size: 23px;
+}
+
+.paginatorGo {
+    cursor: pointer;
+}
+
+.searchInput {
+    position: relative;
+    width: 100%;
+}
+
+.searchInput input {
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+}
+
+.searchInput input:focus {
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+    border-bottom: 1px solid #171717;
+    border-radius: 0px;
+    color: #171717;
+}
+
+.searchInput i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 890;
+}
+
+.searchInput i:hover {
+    cursor: pointer;
+    color: #cccccc
+}
+
+.searchInput input:focus + i {
+    color: #171717;   
+}
+
+.infoBtn:hover {
+    cursor: pointer;
+}
+
+.notifications > li .notification-icon {
+    position: relative;
+    height: 41px;
+    width: 41px;
+}
+
+.notifications > li:last-child .notification-icon {
+    position: relative;
+    height: 41px;
+    width: 41px;
+    background: url(/Scripts/customs/fileManager/imgs/file-manager-icon.png);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+}
+
+.notifications > li .notification-icon i {
+    line-height: 41px;
+    font-size: 24px;
+}
+    
+.notifications > li .notification-icon:hover {
+    background-color: #f3f3f3;
+}
+
+.btn-xs, .btn-group-xs > .btn {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn-default {
+    background-color: white;
+    border-color: #ccc;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.datepicker {
+    z-index: 9999;
+}

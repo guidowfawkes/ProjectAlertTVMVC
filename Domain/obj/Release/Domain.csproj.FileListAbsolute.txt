@@ -1,0 +1,5 @@
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\bin\Release\Domain.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\bin\Release\Domain.pdb
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\obj\Release\Domain.csproj.CoreCompileInputs.cache
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\obj\Release\Domain.dll
+D:\OneDrive\Projetos\ProjectAlertTVMVC\Domain\obj\Release\Domain.pdb

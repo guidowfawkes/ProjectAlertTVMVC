@@ -1,0 +1,90 @@
+﻿@using Domain.Entidades;
+<!DOCTYPE html>
+<html class="fixed">
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <title>@ViewBag.Title</title>
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Web Fonts  -->
+    @*<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">*@
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Contents/Images/favicon.png">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="~/Plugins/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/Plugins/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/Plugins/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="~/Plugins/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="~/Plugins/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker-standalone.css" />
+    <link rel="stylesheet" href="~/Plugins/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" />
+    <link rel="stylesheet" href="~/Plugins/pnotify/pnotify.custom.css" />
+    <link rel="stylesheet" href="~/Plugins/select2/dist/css/select2.css" />
+    <link rel="stylesheet" href="~/Plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="~/Contents/Css/Estoque/Categorias/categorias.css" />
+    <link rel="stylesheet" href="~/Contents/Css/custom-icons/styles.css" />
+    <link rel="stylesheet" href="~/Plugins/jstree/themes/default/style.css" />
+    <link rel="stylesheet" href="~/Plugins/bootstrap-fileupload/bootstrap-fileupload.min.css" />
+    <link rel="stylesheet" href="~/Plugins/fancybox/dist/jquery.fancybox.css">
+    <link rel="stylesheet" href="~/Plugins/nouislider/nouislider.css" />
+    <link rel="stylesheet" href="~/Plugins/owl-carousel2/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="~/Plugins/owl-carousel2/dist/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="~/Plugins/animate/animate.css" />
+    <link rel="stylesheet" href="~/Contents/Css/Custom/menus.css" />
+    <link rel="stylesheet" href="~/Contents/Css/Custom/SideBars.css" />
+    <link rel="stylesheet" href="~/Contents/Css/Custom/Calendario.css" />
+    <link rel="stylesheet" href="~/Plugins/opentip-master/css/opentip.css" />
+
+    <style>
+        #ConteudoDosEventos {
+            overflow-y: scroll;
+        }
+
+        .notifications > li {
+            margin: 0px 21px 0 0 !important;
+        }
+    </style>
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="~/Contents/Css/theme.css" />
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="~/Contents/Css/skins/default.css" />
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="~/Contents/Css/theme-custom.css">
+
+    @RenderSection("Styles", false /*required*/)
+
+    <!-- Head Libs -->
+    <script src="~/Plugins/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+    <section class="body">
+        @Html.Partial("_Header")
+        <div class="inner-wrapper">
+            @Html.Partial("_SideBarLeft")
+            <section role="main" class="content-body">
+                <header class="page-header">
+                    <h2>@ViewBag.Title</h2>
+                </header>
+                <div class="container">
+                    <!-- PAGE CONTAINT: START -->
+                    @RenderBody()
+                    <!-- PAGE CONTAINT: END -->
+                </div>
+            </section>
+        </div>
+    </section>
+    @Html.Partial("_Footer")
+
+    @RenderSection("Scripts", false /*required*/)
+
+</body>
+</html>
+

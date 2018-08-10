@@ -1,0 +1,94 @@
+﻿.btn-title {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.btn-options {
+    padding: 15px;
+    background-color: #ecedf0;
+    color: #4c4c4c;
+    border: 1px solid #c3c3c3;
+    width: 100px;
+}
+
+.btn-options-white {
+    padding: 15px;
+    background-color: white;
+    color: #4c4c4c;
+    border: 1px solid #c3c3c3;
+    width: 115px;
+}
+
+.btn-novo-servico,
+.btn-novo-servico:focus {
+    color: #47a447;
+    border-color: #47a447;
+}
+
+.btn-novo-servico.active,
+.btn-novo-servico:hover {
+    background-color: #47a447;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn-desativa-servico,
+.btn-desativa-servico:focus {
+    color: #d2322d;
+    border-color: #d2322d;
+}
+
+.btn-desativa-servico.active,
+.btn-desativa-servico:hover {
+    background-color: #d2322d;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn-filtro,
+.btn-filtro:focus {
+    color: #0dbdae;
+    border-color: #0dbdae;
+}
+
+.btn-filtro.active,
+.btn-filtro:hover {
+    background-color: #0dbdae;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.filter-active-tag {
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 4px;
+    padding: 6px;
+    box-shadow: 1px 1px 1px 1px gainsboro;
+}
+
+.btn-NFe,
+.btn-NFe:focus {
+    color: #9f01ff;
+    border-color: #9f01ff;
+}
+
+.btn-NFe.active,
+.btn-NFe:hover {
+    background-color: #9f01ff;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn-NFse,
+.btn-NFse:focus {
+    color: #00c8d4;
+    border-color: #00c8d4;
+}
+
+.btn-NFse.active,
+.btn-NFse:hover {
+    background-color: #00c8d4;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+

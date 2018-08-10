@@ -1,0 +1,101 @@
+﻿<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="panel panel-featured-primary">
+            <header class="panel-heading">
+                <div class="panel-actions">
+                    <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+                </div>
+                <h3>Readme</h3>
+            </header>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-lg-12 text-center">
+                        <h4>Aprensentação do Projeto</h4>
+                        <div id="ytplayer"></div>
+                        <script>
+                            // Load the IFrame Player API code asynchronously.
+                            var tag = document.createElement('script');
+                            tag.src = "https://www.youtube.com/player_api";
+                            var firstScriptTag = document.getElementsByTagName('script')[0];
+                            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                            // Replace the 'ytplayer' element with an <iframe> and
+                            // YouTube player after the API code downloads.
+                            var player;
+                            function onYouTubePlayerAPIReady() {
+                                player = new YT.Player('ytplayer', {
+                                    height: '540',
+                                    width: '960',
+                                    videoId: 'QpBTprjUNnk'
+                                });
+                            }
+                        </script>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h4>Código</h4>
+                        <button class="btn btn-success"><i class="fa fa-github"></i> GitHub</button>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h4>Introdução</h4>
+                        <p>
+                            Esse projeto foi desenvolvido com o objetivo de realizar a busca de sinais de aparelhos cadastrados no sistema,
+                            gerando assim um dashboard que consta com as informações obtidas de cada aparelho através de uma requisição de uma API,
+                            por fim um gráfico é desenhado representando os sinais de um determinado aparelho selecionado e filtrado por datas específicas.
+                        </p>
+                        <h4>Arquitetura Utilizada</h4>
+                        <p>
+                            A arquitetura utilizada no projeto foi o padrão MVC com uma camada de Serviços (MVCS), com o intuito de desacoplar as regras
+                            de negócio em uma única camada, tendo assim um projeto mais viável para manutenções e desenvolvimentos futuros. Para a persistência
+                            dos dados foi utilizado o banco de dados relacional em SQL.
+                        </p>
+                        <label><b>Linguagem Utilizada</b></label>
+                        <p>
+                            A linguagem utilizada neste projeto foi C# que vem se destacando no mercado por ser uma linguagem de alto nível que também possui um
+                            grande poder de controle do hardware.
+                        </p>
+                        <label><b>Banco de Dados Utilizado</b></label>
+                        <p>
+                            O banco de dados utilizado no projeto foi o Sql Server nativo para a linguagem C# , pois possui um alto grau de integração com a linguagem
+                            além de ser um dos maiores banco de dados da atualidade, tendo opções tanto gratuitas para projetos de rápido desenvolvimento e baixo
+                            consumo quanto grandes projetos que necessitam de um suporte maior para o controle de informação.
+                        </p>
+                        <label><b>Frameworks Utilizados</b></label>
+
+                        <ul>
+                            <li>
+                                <label>
+                                    ASP .NET MVC
+                                </label>
+                                <p>
+                                    O ASP .NET MVC é um framework nativo do C# para programação para WEB, no qual ele implementa a arquitetura cliente servidor utilizando o padrão
+                                    MVC para diminuir o acoplamento entre as camadas View, Model , Controller.
+                                </p>
+                            </li>
+
+                            <li>
+                                <label>
+                                    Entity Framework
+                                </label>
+                                <p>
+                                    O entity framework é um ORM (Object-Relational Mapping) que é capaz de gerenciar o banco de dados através das classes presentes na camada de modelo
+                                    que representa o negócio, facilitando assim o desenvolvimento do projeto e o gerenciamento do banco de dados, esse ORM foi escolhido por sua forte integração
+                                    com a linguagem utilizada no projeto e por tratar de problemas tais como: concorrência em banco de dados e controle de versão.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <h4>Problemas Tratados</h4>
+                        <p>
+                            Como diferenciais da aplicação a estrutura construída trata problemas como : Concorrência de banco de dados, alto nível de consultas tratado através de paginação,
+                            validação dos formulários basicos propostos, entre outros. Além de oferecer um fácil padrão de desenvolvimento através de classes genêricas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    
+}
